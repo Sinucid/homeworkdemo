@@ -1,0 +1,10 @@
+@import '../../theme/vars.scss';
+
+.wrapper {
+    margin: auto;
+    background-color: $white;
+    padding: 32px 28px 54px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}

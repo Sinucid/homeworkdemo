@@ -1,0 +1,54 @@
+@import '../../theme/vars.scss';
+
+.Radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.RadioLabel {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 0;
+}
+
+.RadioMarker {
+    width: $switches-height;
+    height: $switches-height;
+    border: 1px solid $default-color;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+    
+    &::before {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $default-color;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    &.checked {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+.RadioText {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 14px;
+    user-select: none;
+}
+
+.RadioField {
+    display: none;
+}
+

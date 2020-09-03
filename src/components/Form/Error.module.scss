@@ -1,0 +1,10 @@
+@import '../../theme/vars.scss';
+
+.Error {
+    min-height: $input-mb;
+    font-size: 10px;
+    line-height: 13px;
+    padding: 2px 20px 4px;
+    color: $danger-color;
+}
+

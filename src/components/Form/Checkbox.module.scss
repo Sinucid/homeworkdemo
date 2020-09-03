@@ -1,0 +1,46 @@
+@import '../../theme/vars.scss';
+
+.Checkbox {
+    display: flex;
+}
+
+.CheckboxLabel {
+    width: $switches-height;
+    height: $switches-height;
+    border: 1px solid $default-color;
+    border-radius: 3px;
+    position: relative;
+    margin-right: 8px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: $switches-height/4;
+        top: -$switches-height/20;
+        width: $switches-height/3.5;
+        height: $switches-height/1.5;
+        border: solid $default-color;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    &.checked {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+.CheckboxText {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.CheckboxField {
+    display: none;
+}
+

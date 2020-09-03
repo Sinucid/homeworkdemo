@@ -1,0 +1,27 @@
+@import '../../theme/vars.scss';
+
+.Field {
+    width: 100%;
+    margin-bottom: $input-mb;
+}
+
+.FieldIcon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.FieldWithError {
+    margin-bottom: 0;
+}
+
+.Placeholder {
+    &::placeholder {
+        color: $placeholder-color;
+        opacity: 1;
+    }
+}

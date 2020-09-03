@@ -1,0 +1,24 @@
+@import '../../theme/vars.scss';
+
+.Button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 62px;
+    border-radius: 31px;
+    transition: background-color 0.5s ease;
+}
+
+.ButtonTitle {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+}
+
+.default {
+    background-color: $default-color;
+}
+
+.disabled {
+    background-color: $disabled-color;
+}

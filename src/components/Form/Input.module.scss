@@ -1,0 +1,23 @@
+@import '../../theme/vars.scss';
+
+.InputWrapper {
+    position: relative
+}
+
+.Input {
+    composes: Placeholder from './styles.module.scss';
+    
+    outline: none;
+    border: none;
+    width: 100%;
+    height: $input-height;
+    color: $text-color;
+    background-color: $input-bg;
+    border-radius: 8px;
+    line-height: $input-height;
+    padding: 0 18px;
+}
+
+.InputWithIcon {
+    padding-left: 52px;
+}

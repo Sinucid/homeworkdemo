@@ -1,0 +1,27 @@
+@import '../../theme/vars.scss';
+
+.wrapper {
+    background-color: $bg-color;
+    padding: 16px;
+    height: 100vh;
+    display: flex;
+}
+
+.buttonWrapper {
+    margin-top: 40px;
+}
+
+.responseResult {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.responseSuccess {
+    composes: responseResult;
+    color: $success-color;
+}
+
+.responseError {
+    composes: responseResult;
+    color: $danger-color;
+}
